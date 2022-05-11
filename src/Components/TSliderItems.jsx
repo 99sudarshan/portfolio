@@ -10,7 +10,7 @@ const TSliderItems = ({ img, name }) => {
                 <h3 className='text-xl float-right pt-5 text-gray-700 [text-shadow:0px_1px_2px]'>{name}</h3>
             </div>
             <div className='w-3/5'>
-                <p className='text-gray-500 font-sans'><i class="fa-solid fa-quote-left text-2xl pr-3 "></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita in iste id, facere atque itaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, nisi hic. Possimus, nisi rerum voluptatum facilis dignissimos assumenda quaerat tempore pariatur corporis commodi? Itaque quasi harum natus ut ratione! Aliquam nobis officia quisquam nemo.<i class="fa-solid fa-quote-right text-2xl pl-3 "></i></p>
+                <p className='text-gray-500 font-sans'><i className="fa-solid fa-quote-left text-2xl pr-3 "></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita in iste id, facere atque itaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, nisi hic. Possimus, nisi rerum voluptatum facilis dignissimos assumenda quaerat tempore pariatur corporis commodi? Itaque quasi harum natus ut ratione! Aliquam nobis officia quisquam nemo.<i className="fa-solid fa-quote-right text-2xl pl-3 "></i></p>
             </div>
         </div>
     )

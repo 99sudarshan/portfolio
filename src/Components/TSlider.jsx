@@ -9,8 +9,8 @@ const TestimonialSlider = ({ option, slideCard, name }) => {
         <Splide options={{ ...option }}
             hasSliderWrapper>
             {slideCard.map((slide, index) => {
-                return <SplideSlide>
-                    <TSliderItems img={slide.img} key={index} name={slide.name} />
+                return <SplideSlide key={index}>
+                    <TSliderItems img={slide.img} name={slide.name} />
                 </SplideSlide>
             })}
         </Splide>
