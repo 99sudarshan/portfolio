@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Sansita+Swashed:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.media-items{
+    @apply border rounded-full h-12 w-12 leading-[3rem] md:h-10 md:w-10 text-center md:leading-10 cursor-pointer hover:scale-105 transition-all duration-300;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.social-media{
+    @apply text-white text-2xl md:text-xl;
+}
+
+.nav_li{
+    @apply list-none text-white font-medium text-xl transition-all duration-300 hover:text-green-500 cursor-pointer py-3 
+}
+
+.mobile_nav{
+    @apply bg-black text-white w-full h-full text-center [text-shadow:0px_1px_2px_#e0dada] absolute transition-all duration-500 ease-in-out
+}
+
+.button{
+    @apply border border-green-500 rounded-3xl py-2 px-6 transition-all duration-150 text-green-500 font-medium text-lg  hover:bg-green-500 hover:text-white
+}
+
+.active{
+    @apply text-green-500
+}
+
+.body_header{
+    @apply font-bold text-black text-4xl lg:text-5xl font-sansita opacity-90 text-center md:text-left
+}
+
+.body_para{
+    @apply font-medium text-xl lg:text-2xl py-4 italic opacity-75 text-center md:text-left  
+}
+
+.input_field{
+    @apply h-12 mx-4 border flex items-center rounded-full my-4 bg-gray-100
+}
+
+.input_i{
+    @apply text-gray-600 text-2xl flex-1 text-center
+}
+
+.form_input{
+    @apply h-full [background:none] outline-none flex-[4] pr-6 
+}
+
+
+.before_div::before{
+ content: "";
+ position: absolute;
+ background:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),url('/src/images/2.jpg') no-repeat center center/cover;
+ height: 100%;
+ width: 100%;
+ z-index: -1;
+ /* opacity: 1; */
 }
